@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Scene3 extends StatefulWidget {
+class Signin extends StatefulWidget {
   @override
-  _Scene3State createState() => _Scene3State();
+  _SigninState createState() => _SigninState();
 }
 
-class _Scene3State extends State<Scene3> {
+class _SigninState extends State<Signin> {
   bool rememberMe = false;
 
   void handleContainerTap(String containerName) {
@@ -231,7 +231,7 @@ class _Scene3State extends State<Scene3> {
                 children: [
                   Container(
                     margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 10 * fem, 0 * fem),
+                        0 * fem, 0 * fem, 50 * fem, 0 * fem),
                     child: Row(
                       children: [
                         Checkbox(
@@ -319,18 +319,24 @@ class _Scene3State extends State<Scene3> {
                 ],
               ),
             ),
-            Center(
-              child: Container(
-                margin: EdgeInsets.fromLTRB(8 * fem, 0 * fem, 0 * fem, 0 * fem),
-                child: Text(
-                  'Sign Up',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 16 * ffem,
-                    fontWeight: FontWeight.w400,
-                    height: 1.5 * ffem / fem,
-                    letterSpacing: 1.12 * fem,
-                    color: Color(0xff5e5e5e),
+            GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/signupscreen');
+              },
+              child: Center(
+                child: Container(
+                  margin:
+                      EdgeInsets.fromLTRB(8 * fem, 0 * fem, 0 * fem, 0 * fem),
+                  child: Text(
+                    'Sign Up',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16 * ffem,
+                      fontWeight: FontWeight.w400,
+                      height: 1.5 * ffem / fem,
+                      letterSpacing: 1.12 * fem,
+                      color: Color(0xff5e5e5e),
+                    ),
                   ),
                 ),
               ),

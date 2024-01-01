@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
-
 import 'package:safewander_app/utils.dart';
 
-class Scene2 extends StatelessWidget {
+class Signup extends StatefulWidget {
+  @override
+  _SignupState createState() => _SignupState();
+}
+
+class _SignupState extends State<Signup> {
+  bool rememberMe = false;
+
+  void handleContainerTap(String containerName) {
+    print('$containerName Container Clicked');
+  }
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 400;
@@ -80,7 +90,7 @@ class Scene2 extends StatelessWidget {
                             fontSize: 16 * ffem,
                             height: 1.5 * ffem / fem,
                             letterSpacing: 1.12 * fem,
-                            color: Color(0xff000000),
+                            color: Color.fromARGB(255, 138, 138, 138),
                           ),
                         ),
                       ),
@@ -124,18 +134,7 @@ class Scene2 extends StatelessWidget {
                             ),
                             children: [
                               TextSpan(
-                                text: 'U',
-                                style: SafeGoogleFont(
-                                  'Poppins',
-                                  fontSize: 16 * ffem,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.5 * ffem / fem,
-                                  letterSpacing: 1.12 * fem,
-                                  color: Color(0xff000000),
-                                ),
-                              ),
-                              TextSpan(
-                                text: 'sername :',
+                                text: 'Username :',
                                 style: SafeGoogleFont(
                                   'Poppins',
                                   fontSize: 16 * ffem,
@@ -155,35 +154,35 @@ class Scene2 extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupbbazVL5 (4uAeWvn57k4NFjztrPBbAZ)
+              // autogroupwg8h6Wu (4uAeQBUK8aE5CJRy5JwG8H)
               margin: EdgeInsets.fromLTRB(5 * fem, 0 * fem, 0 * fem, 6.5 * fem),
               width: 347 * fem,
               height: 88.5 * fem,
               child: Stack(
                 children: [
                   Positioned(
-                    // exemailgmailcomobf (49:5)
+                    // usernameck9 (49:8)
                     left: 28 * fem,
-                    top: 45.5 * fem,
+                    top: 44 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 199 * fem,
+                        width: 92 * fem,
                         height: 24 * fem,
                         child: Text(
-                          'ex . email@gmail.com',
+                          'Username',
                           style: SafeGoogleFont(
                             'Poppins',
                             fontSize: 16 * ffem,
                             height: 1.5 * ffem / fem,
                             letterSpacing: 1.12 * fem,
-                            color: Color(0xff000000),
+                            color: Color.fromARGB(255, 138, 138, 138),
                           ),
                         ),
                       ),
                     ),
                   ),
                   Positioned(
-                    // emailgvM (49:6)
+                    // usernamei2V (49:9)
                     left: 0 * fem,
                     top: 23.5 * fem,
                     child: Align(
@@ -201,22 +200,36 @@ class Scene2 extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // emailPZs (49:7)
+                    // usernamepbK (49:10)
                     left: 8 * fem,
                     top: 0 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 65 * fem,
+                        width: 102 * fem,
                         height: 24 * fem,
-                        child: Text(
-                          'Email : ',
-                          style: SafeGoogleFont(
-                            'Poppins',
-                            fontSize: 16 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.5 * ffem / fem,
-                            letterSpacing: 1.12 * fem,
-                            color: Color(0xff000000),
+                        child: RichText(
+                          text: TextSpan(
+                            style: SafeGoogleFont(
+                              'Poppins',
+                              fontSize: 16 * ffem,
+                              fontWeight: FontWeight.w700,
+                              height: 1.5 * ffem / fem,
+                              letterSpacing: 1.12 * fem,
+                              color: Color(0xff000000),
+                            ),
+                            children: [
+                              TextSpan(
+                                text: 'Username :',
+                                style: SafeGoogleFont(
+                                  'Poppins',
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.5 * ffem / fem,
+                                  letterSpacing: 1.12 * fem,
+                                  color: Color(0xff000000),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -265,7 +278,7 @@ class Scene2 extends StatelessWidget {
                             fontSize: 16 * ffem,
                             height: 1.5 * ffem / fem,
                             letterSpacing: 1.12 * fem,
-                            color: Color(0xff000000),
+                            color: Color.fromARGB(255, 138, 138, 138),
                           ),
                         ),
                       ),
@@ -317,7 +330,7 @@ class Scene2 extends StatelessWidget {
                             fontSize: 16 * ffem,
                             height: 1.5 * ffem / fem,
                             letterSpacing: 1.12 * fem,
-                            color: Color(0xff000000),
+                            color: Color.fromARGB(255, 138, 138, 138),
                           ),
                         ),
                       ),
