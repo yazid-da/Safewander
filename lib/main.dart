@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/gestures.dart';
-//import 'dart:ui';
-//import 'package:google_fonts/google_fonts.dart';
 import 'package:safewander_app/Login/sign-in-screen.dart';
 import 'package:safewander_app/Login/sign-up-screen.dart';
 import 'package:safewander_app/utils.dart';
+
+const String signInRoute = '/signinscreen';
+const String signUpRoute = '/signupscreen';
 
 void main() => runApp(MyApp());
 
@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        '/signinscreen': (context) => Signin(),
-        '/signupscreen': (context) => Signup(),
+        signInRoute: (context) => Signin(),
+        signUpRoute: (context) => Signup(),
       },
     );
   }
