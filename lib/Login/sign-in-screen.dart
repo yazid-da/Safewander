@@ -38,7 +38,7 @@ class _SigninState extends State<Signin> {
               width: 347 * fem,
               height: 102.15 * fem,
               child: Image.asset(
-                'assets/page-1/images/logo-dih.png',
+                'assets/page-1/images/logo.png',
                 fit: BoxFit.cover,
               ),
             ),
