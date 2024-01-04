@@ -415,21 +415,26 @@ class _SignupState extends State<Signup> {
                   ),
                 ),
               ),
-              Center(
-                // alreadyhaveanaccountYoT (50:29)
-                child: Container(
-                  margin:
-                      EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 0 * fem),
-                  child: Text(
-                    'Already have an account? Login',
-                    textAlign: TextAlign.center,
-                    style: SafeGoogleFont(
-                      'Poppins',
-                      fontSize: 16 * ffem,
-                      fontWeight: FontWeight.w400,
-                      height: 1.5 * ffem / fem,
-                      letterSpacing: 1.12 * fem,
-                      color: Color(0xff5e5e5e),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/signinscreen');
+                },
+                child: Center(
+                  // alreadyhaveanaccountYoT (50:29)
+                  child: Container(
+                    margin:
+                        EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 0 * fem),
+                    child: Text(
+                      'Already have an account? Login',
+                      textAlign: TextAlign.center,
+                      style: SafeGoogleFont(
+                        'Poppins',
+                        fontSize: 16 * ffem,
+                        fontWeight: FontWeight.w400,
+                        height: 1.5 * ffem / fem,
+                        letterSpacing: 1.12 * fem,
+                        color: Color(0xff5e5e5e),
+                      ),
                     ),
                   ),
                 ),
